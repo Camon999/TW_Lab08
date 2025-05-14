@@ -1,0 +1,9 @@
+Do obslugi API w Postmanie:
+
+GET http://localhost:3100/api/data/latest – Pobiera całą tablicę danych
+POST http://localhost:3100/api/data/123 – Dodaje wartość do tablicy. W body trzeba podać {"elem":10}
+GET http://localhost:3100/api/data/2 – Pobiera wartość według id
+GET http://localhost:3100/api/data/2/latest – Pobiera największą wartość dla danego id (docelowo najnowszy wpis po id)
+GET http://localhost:3100/api/data/2/3 – Pobiera trzy elementy od id 2
+DELETE http://localhost:3100/api/data/all – Usuwa wszystkie elementy z tablicy
+DELETE http://localhost:3100/api/data/2 – Usuwa element o id 2.gi
